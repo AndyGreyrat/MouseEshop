@@ -44,7 +44,6 @@ function App() {
       <Header />
       <div className='container container-fluid'>
           <Routes>
-            <Route path="/" element={<Home />}/>
             <Route path="/Home" element={<Home />}/>
             <Route path="/items/:id" element={<ItemDetails />}/>
             <Route path="/dashboard" element={<DashBoard />}/>
