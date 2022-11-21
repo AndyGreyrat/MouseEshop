@@ -11,7 +11,7 @@ export const Login =() =>{
     const {isAuthenticated,error,loading} = useSelector(state=>state.auth);
     
     useEffect(()=>{
-        if(isAuthenticated){
+        if(isAuthenticated===true){
             navigate("/")
         }
         if(error){

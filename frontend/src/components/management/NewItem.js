@@ -41,7 +41,7 @@ const NewItem = () => {
         }
         if (success) {
             navigate("/dashboard")
-            alert.success("Item Restrited succesfully")
+            alert.success("Item Registred succesfully")
             dispatch({ type: NEW_ITEM_RESET})
         }
     }, [dispatch, alert, error, success,navigate])

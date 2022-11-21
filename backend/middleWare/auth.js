@@ -11,8 +11,8 @@ exports.isAuthenticatedUser= catchAsyncErrors(async (req, res, next)=>{
         return next(new ErrorHandler("You must log in for to get access to this area", 401))
     }
 
-    const decodificada = jwt.decode(token, process.env.JWT_SECRET)
-    req.user=await User.findById(decodificada.id);
+    const encripted = jwt.decode(token, process.env.JWT_SECRET)
+    req.user=await User.findById(encripted.id);
 
     next()
 
