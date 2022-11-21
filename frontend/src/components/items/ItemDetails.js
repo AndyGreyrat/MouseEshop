@@ -148,6 +148,9 @@ return (
             <hr />
             <p>Estado: <span id="stock_stado" className={item.stock> 0 ? 'greenColor' : 'redColor'}>{item.stock> 0 ? "In Stock " : "Finished"}</span></p>
             <hr />
+            <hr />
+              <p id="category">Category: <strong>{item.category}</strong></p>
+             <hr />
             <h4 className="mt-2">Description:</h4>
             <p>{item.description}</p>
             <hr />
