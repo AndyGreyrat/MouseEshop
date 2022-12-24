@@ -6,10 +6,6 @@ const orderSchema = mongoose.Schema({
             type:String,
             required:true
         },
-        city:{
-            type:String,
-            required:true
-        },
         phone:{
             type:String,
             required:true
@@ -18,6 +14,10 @@ const orderSchema = mongoose.Schema({
             type:String,
             required:true
         },
+        city:{
+            type:String,
+            required:true
+        }
     },
     user:{
         type:mongoose.Schema.Types.ObjectId,
